@@ -18,7 +18,8 @@ class BlogTests(TestCase):
             author=self.user,
         )
 
-
+def test_get_absolute_url(self):
+    self.assertEqual(self.post.test_get_absolute_url(),'post/1')
 def test_string_representation(self):
 
     post = Post(title='A sample title')
